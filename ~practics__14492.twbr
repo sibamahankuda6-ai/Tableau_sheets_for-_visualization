@@ -1,0 +1,1790 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='listings' inline='true' name='federated.0ifatg210m7kdx19as1831obpj69' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='listings' name='textscan.1wza2yt13un2qd118w0ni15ybbhu'>
+            <connection class='textscan' directory='C:/Users/ASUS/Downloads' filename='listings.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1wza2yt13un2qd118w0ni15ybbhu' name='listings.csv' table='[listings#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='name' ordinal='1' />
+            <column datatype='integer' name='host_id' ordinal='2' />
+            <column datatype='string' name='host_name' ordinal='3' />
+            <column datatype='string' name='neighbourhood_group' ordinal='4' />
+            <column datatype='string' name='neighbourhood' ordinal='5' />
+            <column datatype='real' name='latitude' ordinal='6' />
+            <column datatype='real' name='longitude' ordinal='7' />
+            <column datatype='string' name='room_type' ordinal='8' />
+            <column datatype='integer' name='price' ordinal='9' />
+            <column datatype='integer' name='minimum_nights' ordinal='10' />
+            <column datatype='integer' name='number_of_reviews' ordinal='11' />
+            <column datatype='date' name='last_review' ordinal='12' />
+            <column datatype='real' name='reviews_per_month' ordinal='13' />
+            <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+            <column datatype='integer' name='availability_365' ordinal='15' />
+            <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+            <column datatype='string' name='license' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[host_id]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>host_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[host_name]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>host_name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighbourhood_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[neighbourhood_group]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>neighbourhood_group</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighbourhood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[neighbourhood]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>neighbourhood</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>room_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[room_type]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>room_type</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minimum_nights</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[minimum_nights]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>minimum_nights</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_reviews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_reviews]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>number_of_reviews</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_review</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[last_review]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>last_review</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews_per_month</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[reviews_per_month]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>reviews_per_month</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calculated_host_listings_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calculated_host_listings_count]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>calculated_host_listings_count</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>availability_365</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[availability_365]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>availability_365</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_reviews_ltm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_reviews_ltm]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>number_of_reviews_ltm</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>license</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[license]</local-name>
+            <parent-name>[listings.csv]</parent-name>
+            <remote-alias>license</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='listings.csv' datatype='table' name='[__tableau_internal_object_id__].[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]' role='measure' type='quantitative' />
+      <column caption='Availability 365' datatype='integer' name='[availability_365]' role='measure' type='quantitative' />
+      <column caption='Calculated Host Listings Count' datatype='integer' name='[calculated_host_listings_count]' role='measure' type='quantitative' />
+      <column caption='Host Id' datatype='integer' name='[host_id]' role='dimension' type='ordinal' />
+      <column caption='Host Name' datatype='string' name='[host_name]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Last Review' datatype='date' name='[last_review]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='License' datatype='string' name='[license]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Minimum Nights' datatype='integer' name='[minimum_nights]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+      <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
+      <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+      <column caption='Number Of Reviews Ltm' datatype='integer' name='[number_of_reviews_ltm]' role='measure' type='quantitative' />
+      <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+      <column caption='Reviews Per Month' datatype='real' name='[reviews_per_month]' role='dimension' type='quantitative' />
+      <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+      <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0codbtm1fr3oji160l7ks1tsjlxn.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/10/2026 08:30:45 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>listings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42931</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>listings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36591</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>host_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[host_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>host_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>listings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11248</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>host_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[host_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>host_name</remote-alias>
+              <ordinal>3</ordinal>
+              <family>listings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5314</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>neighbourhood_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[neighbourhood_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>neighbourhood_group</remote-alias>
+              <ordinal>4</ordinal>
+              <family>listings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>neighbourhood</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[neighbourhood]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>neighbourhood</remote-alias>
+              <ordinal>5</ordinal>
+              <family>listings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>339</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>6</ordinal>
+              <family>listings.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17024</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>7</ordinal>
+              <family>listings.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13739</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>room_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[room_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>room_type</remote-alias>
+              <ordinal>8</ordinal>
+              <family>listings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price</remote-alias>
+              <ordinal>9</ordinal>
+              <family>listings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1035</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>minimum_nights</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[minimum_nights]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>minimum_nights</remote-alias>
+              <ordinal>10</ordinal>
+              <family>listings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>97</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number_of_reviews</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[number_of_reviews]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number_of_reviews</remote-alias>
+              <ordinal>11</ordinal>
+              <family>listings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>448</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>last_review</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[last_review]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>last_review</remote-alias>
+              <ordinal>12</ordinal>
+              <family>listings.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2192</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reviews_per_month</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[reviews_per_month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reviews_per_month</remote-alias>
+              <ordinal>13</ordinal>
+              <family>listings.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1069</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>calculated_host_listings_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[calculated_host_listings_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>calculated_host_listings_count</remote-alias>
+              <ordinal>14</ordinal>
+              <family>listings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>108</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>availability_365</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[availability_365]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>availability_365</remote-alias>
+              <ordinal>15</ordinal>
+              <family>listings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>914</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number_of_reviews_ltm</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[number_of_reviews_ltm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number_of_reviews_ltm</remote-alias>
+              <ordinal>16</ordinal>
+              <family>listings.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>177</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>license</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[license]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>license</remote-alias>
+              <ordinal>17</ordinal>
+              <family>listings.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:neighbourhood_group:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bronx&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Staten Island&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Queens&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Manhattan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brooklyn&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='listings.csv' id='listings.csv_C572ED7A702340508CEEBD4BC23FC7BE'>
+            <properties context=''>
+              <relation connection='textscan.1wza2yt13un2qd118w0ni15ybbhu' name='listings.csv' table='[listings#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='name' ordinal='1' />
+                  <column datatype='integer' name='host_id' ordinal='2' />
+                  <column datatype='string' name='host_name' ordinal='3' />
+                  <column datatype='string' name='neighbourhood_group' ordinal='4' />
+                  <column datatype='string' name='neighbourhood' ordinal='5' />
+                  <column datatype='real' name='latitude' ordinal='6' />
+                  <column datatype='real' name='longitude' ordinal='7' />
+                  <column datatype='string' name='room_type' ordinal='8' />
+                  <column datatype='integer' name='price' ordinal='9' />
+                  <column datatype='integer' name='minimum_nights' ordinal='10' />
+                  <column datatype='integer' name='number_of_reviews' ordinal='11' />
+                  <column datatype='date' name='last_review' ordinal='12' />
+                  <column datatype='real' name='reviews_per_month' ordinal='13' />
+                  <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+                  <column datatype='integer' name='availability_365' ordinal='15' />
+                  <column datatype='integer' name='number_of_reviews_ltm' ordinal='16' />
+                  <column datatype='string' name='license' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Available Listing'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='listings' name='federated.0ifatg210m7kdx19as1831obpj69' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ifatg210m7kdx19as1831obpj69'>
+            <column-instance column='[__tableau_internal_object_id__].[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]' pivot='key' type='quantitative' />
+            <column caption='listings.csv' datatype='table' name='[__tableau_internal_object_id__].[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]' role='measure' type='quantitative' />
+            <column caption='Availability 365' datatype='integer' name='[availability_365]' role='measure' type='quantitative' />
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[host_name]' derivation='Count' name='[cnt:host_name:ok]' pivot='key' type='ordinal' />
+            <column caption='Host Name' datatype='string' name='[host_name]' role='dimension' type='nominal' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[availability_365]' derivation='None' name='[none:availability_365:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0ifatg210m7kdx19as1831obpj69].[none:availability_365:qk]' included-values='in-range'>
+            <min>200</min>
+          </filter>
+          <slices>
+            <column>[federated.0ifatg210m7kdx19as1831obpj69].[none:availability_365:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ifatg210m7kdx19as1831obpj69].[avg:price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ifatg210m7kdx19as1831obpj69].[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]</rows>
+        <cols>([federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood:nk] / [federated.0ifatg210m7kdx19as1831obpj69].[cnt:host_name:ok])</cols>
+      </table>
+      <simple-id uuid='{E30662F7-96B1-446B-B9FB-2DCB517BEFEC}' />
+    </worksheet>
+    <worksheet name='Budget friendly properties'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='listings' name='federated.0ifatg210m7kdx19as1831obpj69' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ifatg210m7kdx19as1831obpj69'>
+            <column-instance column='[__tableau_internal_object_id__].[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]' pivot='key' type='quantitative' />
+            <column caption='listings.csv' datatype='table' name='[__tableau_internal_object_id__].[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]' role='measure' type='quantitative' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([price])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Allerton&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Arden Heights&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Arrochar&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Arverne&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Astoria&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Bath Beach&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Battery Park City&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Bay Ridge&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Bay Terrace&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Baychester&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Bayside&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Bayswater&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Bedford-Stuyvesant&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Belle Harbor&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Bellerose&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Belmont&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Bensonhurst&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Bergen Beach&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Boerum Hill&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Borough Park&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Breezy Point&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Briarwood&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Brighton Beach&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Bronxdale&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Brooklyn Heights&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Brownsville&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Bull&apos;s Head&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Bushwick&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Cambria Heights&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Canarsie&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Carroll Gardens&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Castle Hill&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Castleton Corners&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Chelsea&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Chelsea, Staten Island&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Chinatown&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;City Island&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Civic Center&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Claremont Village&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Clason Point&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Clifton&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Clinton Hill&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Co-op City&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Cobble Hill&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;College Point&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Columbia St&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Concord&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Concourse&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Concourse Village&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Coney Island&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Corona&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Country Club&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Crown Heights&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Cypress Hills&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Ditmars Steinway&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Dongan Hills&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Douglaston&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Downtown Brooklyn&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;DUMBO&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Dyker Heights&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;East Elmhurst&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;East Flatbush&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;East Harlem&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;East Morrisania&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;East New York&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;East Village&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Eastchester&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Edenwald&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Edgemere&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Elmhurst&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Eltingville&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Emerson Hill&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Far Rockaway&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Fieldston&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Financial District&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Flatbush&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Flatiron District&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Flatlands&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Flushing&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Fordham&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Forest Hills&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Fort Greene&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Fort Hamilton&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Fort Wadsworth&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Fresh Meadows&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Gerritsen Beach&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Glendale&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Gowanus&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Gramercy&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Graniteville&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Grant City&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Gravesend&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Great Kills&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Greenpoint&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Greenwich Village&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Grymes Hill&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Harlem&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Hell&apos;s Kitchen&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Highbridge&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Hollis&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Holliswood&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Howard Beach&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Howland Hook&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Huguenot&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Hunts Point&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Inwood&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Jackson Heights&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Jamaica&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Jamaica Estates&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Jamaica Hills&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Kensington&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Kew Gardens&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Kew Gardens Hills&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Kingsbridge&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Kips Bay&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Laurelton&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Lighthouse Hill&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Little Italy&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Little Neck&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Long Island City&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Longwood&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Lower East Side&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Manhattan Beach&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Marble Hill&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Mariners Harbor&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Maspeth&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Melrose&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Middle Village&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Midland Beach&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Midtown&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Midwood&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Mill Basin&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Morningside Heights&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Morris Heights&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Morris Park&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Morrisania&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Mott Haven&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Mount Eden&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Mount Hope&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Murray Hill&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Navy Yard&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Neponsit&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;New Brighton&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;New Dorp Beach&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;New Springville&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;NoHo&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Nolita&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;North Riverdale&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Norwood&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Oakwood&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Olinville&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Ozone Park&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Park Slope&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Parkchester&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Pelham Bay&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Pelham Gardens&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Port Morris&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Port Richmond&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Prince&apos;s Bay&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Prospect Heights&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Prospect-Lefferts Gardens&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Queens Village&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Randall Manor&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Red Hook&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Rego Park&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Richmond Hill&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Richmondtown&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Ridgewood&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Riverdale&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Rockaway Beach&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Roosevelt Island&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Rosebank&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Rosedale&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Rossville&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Schuylerville&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Sea Gate&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Sheepshead Bay&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Shore Acres&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Silver Lake&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;SoHo&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Soundview&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;South Beach&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;South Ozone Park&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;South Slope&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Springfield Gardens&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Spuyten Duyvil&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;St. Albans&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;St. George&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Stapleton&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Stuyvesant Town&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Sunnyside&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Sunset Park&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Theater District&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Throgs Neck&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Todt Hill&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Tompkinsville&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Tottenville&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Tremont&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Tribeca&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Two Bridges&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Unionport&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;University Heights&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Upper East Side&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Upper West Side&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Van Nest&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Vinegar Hill&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Wakefield&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Washington Heights&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;West Brighton&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;West Farms&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;West Village&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Westchester Square&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Whitestone&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Williamsbridge&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Williamsburg&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Willowbrook&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Windsor Terrace&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Woodhaven&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Woodlawn&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Woodrow&quot;' />
+                  <groupfilter function='member' level='[none:neighbourhood:nk]' member='&quot;Woodside&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0ifatg210m7kdx19as1831obpj69].[none:price:qk]' included-values='in-range'>
+            <min>100</min>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0ifatg210m7kdx19as1831obpj69].[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0ifatg210m7kdx19as1831obpj69].[none:price:qk]</column>
+            <column>[federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0ifatg210m7kdx19as1831obpj69].[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]</rows>
+        <cols>[federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood:nk]</cols>
+      </table>
+      <simple-id uuid='{40BAB284-2916-43A7-A410-1C7DDAD0857C}' />
+    </worksheet>
+    <worksheet name='Highlight rated listings'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='listings' name='federated.0ifatg210m7kdx19as1831obpj69' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ifatg210m7kdx19as1831obpj69'>
+            <column-instance column='[__tableau_internal_object_id__].[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]' pivot='key' type='quantitative' />
+            <column caption='listings.csv' datatype='table' name='[__tableau_internal_object_id__].[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]' role='measure' type='quantitative' />
+            <column-instance column='[number_of_reviews]' derivation='None' name='[none:number_of_reviews:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0ifatg210m7kdx19as1831obpj69].[none:number_of_reviews:qk]' included-values='in-range'>
+            <min>95</min>
+            <max>1842</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0ifatg210m7kdx19as1831obpj69].[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0ifatg210m7kdx19as1831obpj69].[none:number_of_reviews:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ifatg210m7kdx19as1831obpj69].[sum:number_of_reviews:qk]' />
+              <text column='[federated.0ifatg210m7kdx19as1831obpj69].[sum:price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ifatg210m7kdx19as1831obpj69].[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]</rows>
+        <cols>[federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk]</cols>
+      </table>
+      <simple-id uuid='{1467065C-2B84-4AB3-BA16-EE4CC3EBCC01}' />
+    </worksheet>
+    <worksheet name='Host performance'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='listings' name='federated.0ifatg210m7kdx19as1831obpj69' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ifatg210m7kdx19as1831obpj69'>
+            <column-instance column='[__tableau_internal_object_id__].[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]' pivot='key' type='quantitative' />
+            <column caption='listings.csv' datatype='table' name='[__tableau_internal_object_id__].[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]' role='measure' type='quantitative' />
+            <column-instance column='[host_name]' derivation='Count' name='[cnt:host_name:ok]' pivot='key' type='ordinal' />
+            <column caption='Host Name' datatype='string' name='[host_name]' role='dimension' type='nominal' />
+            <column-instance column='[host_name]' derivation='None' name='[none:host_name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0ifatg210m7kdx19as1831obpj69].[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]' included-values='in-range'>
+            <min>5</min>
+          </filter>
+          <slices>
+            <column>[federated.0ifatg210m7kdx19as1831obpj69].[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ifatg210m7kdx19as1831obpj69].[none:host_name:nk]' />
+              <size column='[federated.0ifatg210m7kdx19as1831obpj69].[none:host_name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ifatg210m7kdx19as1831obpj69].[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]</rows>
+        <cols>[federated.0ifatg210m7kdx19as1831obpj69].[cnt:host_name:ok]</cols>
+      </table>
+      <simple-id uuid='{88A8D5E4-CCE5-4FB9-B2E4-C6FB7B862D38}' />
+    </worksheet>
+    <worksheet name='Neighborhood Performance'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='listings' name='federated.0ifatg210m7kdx19as1831obpj69' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ifatg210m7kdx19as1831obpj69'>
+            <column-instance column='[neighbourhood]' derivation='Count' name='[cnt:neighbourhood:ok]' pivot='key' type='ordinal' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[number_of_reviews]' derivation='None' name='[none:number_of_reviews:qk]' pivot='key' type='quantitative' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0ifatg210m7kdx19as1831obpj69].[none:number_of_reviews:qk]' included-values='in-range'>
+            <min>90</min>
+          </filter>
+          <slices>
+            <column>[federated.0ifatg210m7kdx19as1831obpj69].[none:number_of_reviews:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0ifatg210m7kdx19as1831obpj69].[cnt:neighbourhood:ok]</cols>
+      </table>
+      <simple-id uuid='{1C0D0EDD-4C40-4B23-859B-DB4B3D30472F}' />
+    </worksheet>
+    <worksheet name='Neighborhood comparision dashboard'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='listings' name='federated.0ifatg210m7kdx19as1831obpj69' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ifatg210m7kdx19as1831obpj69'>
+            <column-instance column='[__tableau_internal_object_id__].[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]' pivot='key' type='quantitative' />
+            <column caption='listings.csv' datatype='table' name='[__tableau_internal_object_id__].[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]' role='measure' type='quantitative' />
+            <column-instance column='[number_of_reviews]' derivation='Avg' name='[avg:number_of_reviews:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood_group:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:neighbourhood_group:nk]' member='&quot;Bronx&quot;' />
+              <groupfilter function='member' level='[none:neighbourhood_group:nk]' member='&quot;Brooklyn&quot;' />
+              <groupfilter function='member' level='[none:neighbourhood_group:nk]' member='&quot;Manhattan&quot;' />
+              <groupfilter function='member' level='[none:neighbourhood_group:nk]' member='&quot;Queens&quot;' />
+              <groupfilter function='member' level='[none:neighbourhood_group:nk]' member='&quot;Staten Island&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:room_type:nk]' member='&quot;Entire home/apt&quot;' />
+              <groupfilter function='member' level='[none:room_type:nk]' member='&quot;Hotel room&quot;' />
+              <groupfilter function='member' level='[none:room_type:nk]' member='&quot;Private room&quot;' />
+              <groupfilter function='member' level='[none:room_type:nk]' member='&quot;Shared room&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood_group:nk]' direction='ASC' measure-to-sort-by='[federated.0ifatg210m7kdx19as1831obpj69].[avg:price:qk]' shelf='columns' />
+            <shelf-sort-v2 dimension-to-sort='[federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0ifatg210m7kdx19as1831obpj69].[avg:price:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood_group:nk]</column>
+            <column>[federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ifatg210m7kdx19as1831obpj69].[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ifatg210m7kdx19as1831obpj69].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ifatg210m7kdx19as1831obpj69].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0ifatg210m7kdx19as1831obpj69].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ifatg210m7kdx19as1831obpj69].[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0ifatg210m7kdx19as1831obpj69].[:Measure Names]' />
+              <text column='[federated.0ifatg210m7kdx19as1831obpj69].[avg:number_of_reviews:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0ifatg210m7kdx19as1831obpj69].[avg:price:qk] + [federated.0ifatg210m7kdx19as1831obpj69].[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk])</rows>
+        <cols>([federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood_group:nk] / [federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk])</cols>
+      </table>
+      <simple-id uuid='{61427208-35E1-4D8F-9684-AA17A0E8E2C9}' />
+    </worksheet>
+    <worksheet name='Popular listings'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='listings' name='federated.0ifatg210m7kdx19as1831obpj69' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ifatg210m7kdx19as1831obpj69'>
+            <column-instance column='[__tableau_internal_object_id__].[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]' pivot='key' type='quantitative' />
+            <column caption='listings.csv' datatype='table' name='[__tableau_internal_object_id__].[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]' role='measure' type='quantitative' />
+            <column-instance column='[number_of_reviews]' derivation='Avg' name='[avg:number_of_reviews:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[number_of_reviews]' derivation='None' name='[none:number_of_reviews:qk]' pivot='key' type='quantitative' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood_group:nk]' direction='DESC' using='[federated.0ifatg210m7kdx19as1831obpj69].[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]' />
+          <filter class='quantitative' column='[federated.0ifatg210m7kdx19as1831obpj69].[none:number_of_reviews:qk]' included-values='in-range'>
+            <min>100</min>
+          </filter>
+          <slices>
+            <column>[federated.0ifatg210m7kdx19as1831obpj69].[none:number_of_reviews:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood_group:nk]' />
+              <size column='[federated.0ifatg210m7kdx19as1831obpj69].[avg:price:qk]' />
+              <text column='[federated.0ifatg210m7kdx19as1831obpj69].[avg:number_of_reviews:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ifatg210m7kdx19as1831obpj69].[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{B7CD97D6-20DC-4FCD-83F1-76FA20BE46AA}' />
+    </worksheet>
+    <worksheet name='Premium Listing'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='listings' name='federated.0ifatg210m7kdx19as1831obpj69' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ifatg210m7kdx19as1831obpj69'>
+            <column-instance column='[__tableau_internal_object_id__].[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]' pivot='key' type='quantitative' />
+            <column caption='listings.csv' datatype='table' name='[__tableau_internal_object_id__].[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]' role='measure' type='quantitative' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([price])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:neighbourhood:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0ifatg210m7kdx19as1831obpj69].[none:price:qk]' included-values='in-range'>
+            <min>300</min>
+          </filter>
+          <filter class='categorical' column='[federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk]'>
+            <groupfilter function='member' level='[none:room_type:nk]' member='&quot;Entire home/apt&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood_group:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0ifatg210m7kdx19as1831obpj69].[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0ifatg210m7kdx19as1831obpj69].[none:price:qk]</column>
+            <column>[federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk]</column>
+            <column>[federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0ifatg210m7kdx19as1831obpj69].[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]</rows>
+        <cols>([federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk] / [federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood_group:nk])</cols>
+      </table>
+      <simple-id uuid='{142CAA8F-6AA5-4D7E-9BAE-3BF6C7F91342}' />
+    </worksheet>
+    <worksheet name='Property type distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='listings' name='federated.0ifatg210m7kdx19as1831obpj69' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ifatg210m7kdx19as1831obpj69'>
+            <column-instance column='[__tableau_internal_object_id__].[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]' pivot='key' type='quantitative' />
+            <column caption='listings.csv' datatype='table' name='[__tableau_internal_object_id__].[listings.csv_C572ED7A702340508CEEBD4BC23FC7BE]' role='measure' type='quantitative' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk]'>
+            <groupfilter function='member' level='[none:room_type:nk]' member='&quot;Entire home/apt&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ifatg210m7kdx19as1831obpj69].[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{02A9C1ED-9291-40F3-8B85-28DCC892AECA}' />
+    </worksheet>
+    <worksheet name='Room type analysis'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='listings' name='federated.0ifatg210m7kdx19as1831obpj69' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ifatg210m7kdx19as1831obpj69'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[neighbourhood]' derivation='Count' name='[cnt:neighbourhood:ok]' pivot='key' type='ordinal' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk]'>
+            <groupfilter function='member' level='[none:room_type:nk]' member='&quot;Entire home/apt&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ifatg210m7kdx19as1831obpj69].[avg:price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ifatg210m7kdx19as1831obpj69].[avg:price:qk]</rows>
+        <cols>[federated.0ifatg210m7kdx19as1831obpj69].[cnt:neighbourhood:ok]</cols>
+      </table>
+      <simple-id uuid='{CF2ED893-9B27-4890-BD55-5AD003FD7415}' />
+    </worksheet>
+    <worksheet name='Sheet 11'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A12D7694-1B34-4367-BB35-9D30A77A7AF5}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DC3E596C-6DB0-467A-89CD-06572134E13F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AC8C37F2-8F39-4559-884C-E91A1D1A59B7}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Room type analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{99D44560-92E4-47B2-B51C-CCF258FD80E4}' />
+    </window>
+    <window class='worksheet' name='Neighborhood Performance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0ifatg210m7kdx19as1831obpj69].[none:number_of_reviews:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E957CCEC-8E99-4C6A-87B4-62B7E2D29CA0}' />
+    </window>
+    <window class='worksheet' name='Property type distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0ifatg210m7kdx19as1831obpj69].[__tableau_internal_object_id__].[cnt:listings.csv_C572ED7A702340508CEEBD4BC23FC7BE:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5330912A-3D23-481A-BFFF-626480AA4C17}' />
+    </window>
+    <window class='worksheet' name='Available Listing'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D4A5A8A5-2E32-4769-81BE-937354F9209F}' />
+    </window>
+    <window class='worksheet' name='Highlight rated listings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ifatg210m7kdx19as1831obpj69].[sum:number_of_reviews:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1C035F92-08CA-4EF8-80FB-08A616CC5F4C}' />
+    </window>
+    <window class='worksheet' name='Premium Listing'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EE75E37E-9D37-49C5-A80C-9C6AB43ADFB6}' />
+    </window>
+    <window class='worksheet' name='Host performance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ifatg210m7kdx19as1831obpj69].[none:host_name:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0ifatg210m7kdx19as1831obpj69].[none:host_name:nk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{152412A2-132D-4F92-88AD-AC6039FD8D4B}' />
+    </window>
+    <window class='worksheet' name='Neighborhood comparision dashboard'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0ifatg210m7kdx19as1831obpj69].[none:room_type:nk]' type='filter' />
+            <card param='[federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood_group:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.0ifatg210m7kdx19as1831obpj69].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{930C977B-C611-4326-B09C-1566CEF50C4B}' />
+    </window>
+    <window class='worksheet' name='Budget friendly properties'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2A7C39A6-AC7E-4F1F-AA6C-AEA62196F168}' />
+    </window>
+    <window class='worksheet' name='Popular listings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0ifatg210m7kdx19as1831obpj69].[avg:price:qk]' type='size' />
+            <card pane-specification-id='2' param='[federated.0ifatg210m7kdx19as1831obpj69].[none:neighbourhood_group:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B0B7DDB1-0E99-4EA2-90BA-8C2B3E9428DC}' />
+    </window>
+    <window class='worksheet' name='Sheet 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DC81FAFC-21E5-45C2-924D-AE353B15DDB1}' />
+    </window>
+    <window class='worksheet' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F58EC076-4B26-4605-88C6-36AC6AFBE07F}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{A3BC4918-1AB0-4694-A327-C4ED4B89E9A0}' />
+    </window>
+  </windows>
+</workbook>
